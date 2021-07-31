@@ -1,0 +1,12 @@
+.info-panel-tab-title {
+  /* File and Outline */
+  font-size: var(--tab-title-font-size);
+}
+
+.info-panel-tab-border {
+  background: var(--title-color);
+}
+
+.outline-label {
+  color: var(--title-color);
+}

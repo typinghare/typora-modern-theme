@@ -1,0 +1,18 @@
+.md-image > .md-meta {
+  font-family: var(--monospace);
+  color: var(--image-meta-text-color);
+  background-color: var(--image-meta-background-color);
+  font-size: 0.9em;
+  padding: 2px 4px;
+}
+
+img {
+  padding: var(--image-padding);
+  background-color: var(--image-background-color);
+  display: inline-block;
+}
+
+.md-image {
+  display: block;
+  text-align: center;
+}

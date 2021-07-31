@@ -1,0 +1,82 @@
+ul, ol {
+  padding-left: var(--list-padding-left);
+}
+
+ul:first-child, ol:first-child {
+  margin-top: 0;
+}
+
+ul:last-child, ol:last-child {
+  margin-bottom: 0;
+}
+
+#write ol li, ul li {
+  padding-left: var(--list-item-padding-left);
+}
+
+
+/* ------------ task list ------------ */
+.md-task-list-item {
+  margin-top: 0.3rem;
+}
+
+#write .md-task-list-item > input {
+  display: block;
+  position: absolute;
+  background-color: var(--background-color);
+  border: 1px solid var(--task-list-input-border-color);
+  border-radius: 0.2rem;
+  height: 1rem;
+  width: 1rem;
+  transition: background 0.4s;
+  -webkit-appearance: initial;
+}
+
+#write .md-task-list-item > input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#write .md-task-list-item > input:hover {
+  background: var(--task-list-input-hover-color);
+}
+
+#write .md-task-list-item > input[checked]::before {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  height: 60%;
+  width: 2px;
+  transform: rotate(40deg);
+  background: var(--task-list-input-tick-color);
+}
+
+#write .md-task-list-item > input[checked]::after {
+  content: "";
+  position: absolute;
+  top: 46%;
+  left: 25%;
+  height: 30%;
+  width: 2px;
+  transform: rotate(-40deg);
+  background: var(--task-list-input-tick-color);
+}
+
+#write .md-task-list-item > p {
+  padding-left: var(--task-list-text-padding-left);
+  transition: color 0.4s, opacity 0.4s;
+}
+
+#write .md-task-list-item.task-list-done > p {
+  text-decoration: line-through;
+  color: var(--task-list-text-done-color);
+}
+
+#write .md-task-list-item.task-list-done > p > .md-emoji {
+  opacity: 0.6;
+}
+
+#write .md-task-list-item.task-list-done > p > .md-link > a {
+  opacity: 0.6;
+}
