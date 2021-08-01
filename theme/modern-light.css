@@ -1,0 +1,29 @@
+/**
+ Presented by ShotgunRO.
+ github repository: https://github.com/shotgun8767/typora-modern-theme
+ email: shotgun8767@gamil.com
+ -----------------------------------------------------------------------------------
+ The modern family themes stylesheet can be divided into the following modules:
+ 1. [typora]: some extra styles for typora interface.
+ 2. [general]: includes bold, italic, highlight, link, horizontal rule(hr) and so on.
+ 3. [title]
+ 4. [blockquote]
+ 5. [code]: includes inline code and code block.
+ 6. [list]: includes unordered list, ordered list and task list.
+ 7. [table]
+ 8. [image]
+ -----------------------------------------------------------------------------------
+ You are allowed to modify the values of attributes in ':root' to customize your own
+ theme, but remember to import the stylesheet, otherwise the attributes will not
+ take effect.
+ Be careful if you're gonna modify the stylesheets in 'modern' directory.
+ */
+
+@import "modern/typora.css";
+@import "modern/general.css";
+@import "modern/title.css";
+@import "modern/blockquote.css";
+@import "modern/code.css";
+@import "modern/list.css";
+@import "modern/table.css";
+@import "modern/image.css";

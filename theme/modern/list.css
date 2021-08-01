@@ -25,7 +25,7 @@ ul:last-child, ol:last-child {
   position: absolute;
   background-color: var(--background-color);
   border: 1px solid var(--task-list-input-border-color);
-  border-radius: 0.2rem;
+  border-radius: var(--task-list-input-border-radius);
   height: 1rem;
   width: 1rem;
   transition: background 0.4s;
@@ -69,7 +69,6 @@ ul:last-child, ol:last-child {
 }
 
 #write .md-task-list-item.task-list-done > p {
-  text-decoration: line-through;
   color: var(--task-list-text-done-color);
 }
 

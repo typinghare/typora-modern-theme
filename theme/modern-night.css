@@ -1,6 +1,6 @@
 /**
  Presented by ShotgunRO.
- github:
+ github repository: https://github.com/shotgun8767/typora-modern-theme
  email: shotgun8767@gamil.com
  -----------------------------------------------------------------------------------
  The modern family themes stylesheet can be divided into the following modules:
@@ -28,30 +28,31 @@
 @import "modern/table.css";
 @import "modern/image.css";
 
+/* [typora] */
 :root {
-  /* [typora] */
   --bg-color: #333333;
-  --search-select-bg-color: #000;
-  --search-select-text-color: #fff;
-  --heading-char-color: #ddd;
-  --color-popover-bg-color: #fafafa;
-  --control-text-color: red;
-  --control-text-hover-color: blue;
-  --window-border: 1px solid #eee;
-  --active-file-bg-color: #eee;
+  --text-color: #ECF0F1;
+  --side-bar-bg-color: #2C2C2C;
+  --select-text-bg-color: #4A89DC;
+  --search-select-bg-color: #222222;
+  --search-select-text-color: var(--text-color);
+  --heading-char-color: var(--text-color);
+  --color-popover-bg-color: #555555;
+  --window-border: 1px solid #777777;
+  --active-toggle-btn-color: #70717D;
+  --active-file-bg-color: #444444;
   --active-file-text-color: inherit;
-  --active-file-border-color: #777;
-  --focus-ring-color: #6eace2;
-  --item-hover-bg-color: rgba(229, 229, 229, 0.59);;
-  --item-hover-text-color: inherit;
+  --active-file-border-color: #8d8df0;
+  --item-hover-bg-color: #70717D;
+  --item-hover-text-color: var(--text-color);
   --side-bar-menu-active-tint: var(--side-bar-menu-active-tint);
   --mac-title-bar-height: 20px;
   --sidebar-width: 270px;
-  --side-bar-bg-color: var(--background-color);
-  /*--active-file-bg-color: var(--shadow-color);*/
-  --item-hover-bg-color: #999999;
-  /*--item-hover-bg-color: var(--shadow-color);*/
-  --tab-title-font-size: 1.2rem;
+  --tab-title-font-size: 16px;
+  --dropdown-menu-border-radius: 0.3em;
+  --dropdown-menu-background-color: #444444;
+  --dropdown-menu-divider-color: #777777;
+  --rawblock-edit-panel-bd: #333;
   --base-font: "Helvetica Neue", "Noto Sans", -apple-system, Ubuntu,
   "Microsoft YaHei", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans",
   "Noto Sans CJK SC", "PingFang SC", "Hiragino Sans GB", "Source Han Sans SC",
@@ -66,11 +67,12 @@
   --monospace: Consolas, "JetBrains Mono", "Fira Code", "Cascadia Code", "Microsoft YaHei UI",
   "Sarasa Term SC", Monaco, "Deja Vu Sans Mono", "Lucida Console", "Andale Mono",
   "Roboto Mono", Courier, Monospace !important;
+}
 
-  /* [general] */
+/* [general] */
+:root {
   --background-color: var(--bg-color);
   --font-size: 16px;
-  --text-color: #ECF0F1;
   --text-line-heigt: 1.6em;
   --text-letter-spacing: 0;
   --text-word-spacing: 0.05em;
@@ -84,8 +86,10 @@
   --link-underscore-color: var(--link-color);
   --link-url-color: #72BAA7;
   --hr-color: #7BBFEA;
+}
 
-  /* [title] */
+/* [title] */
+:root {
   --title-color: #99CCFF;
   --title-h1-size: 2.4rem;
   --title-h1-underscore-display: block; /* set 'none' as value if do not want underscore to be showed */
@@ -94,15 +98,19 @@
   --title-h4-size: 1.45rem;
   --title-h5-size: 1.3rem;
   --title-h6-size: 1.15rem;
+}
 
-  /* [blockquote] */
+/* [blockquote] */
+:root {
   --blockquote-background-color: #444444;
   --blockquote-bar-width: 0.25em;
   --blockquote-bar-color: #EAC100;
   --blockquote-bar-padding: 0.4em 0 0.4em 1em;
   --blockquote-text-color: #B3B3B3;
+}
 
-  /* [code] */
+/* [code] */
+:root {
   --inline-code-font-size: 0.9em;
   --inline-code-color: #FF9D6F;
   --inline-code-background-color: #333A75;
@@ -136,22 +144,29 @@
   --code-block-string-color: #C3E88D;
   --code-block-atom-color: #C792EA;
   --code-block-comment-color: #676E95;
+}
 
-  /* [list] */
+/* [list] */
+:root {
   --list-padding-left: 1.25em;
   --list-item-padding-left: 0.2em;
   --task-list-input-border-color: #B3B3B3;
+  --task-list-input-border-radius: 0.25em;
   --task-list-input-hover-color: #666666;
   --task-list-text-done-color: #B9B9B9;
   --task-list-text-padding-left: 0.4em;
   --task-list-input-tick-color: #B3B6B9;
+}
 
-  /* [table] */
+/* [table] */
+:root {
   --table-cell-padding: 0.5em; /* cell includes <th> and <td>, the same below */
   --table-cell-border-color: var(--text-color);
-  --table-cell-second-fill-color: #3a3945;
+  --table-cell-second-fill-color: #444444;
+}
 
-  /* [image] */
+/* [image] */
+:root {
   --image-meta-text-color: #FF9D6F;
   --image-meta-background-color: #333A75;
   --image-padding: 1rem;
