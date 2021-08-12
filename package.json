@@ -1,0 +1,22 @@
+{
+  "name": "typora-modern-theme",
+  "version": "1.0.0",
+  "description": "A modern theme for typora",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shotgun8767/typora-modern-theme.git"
+  },
+  "keywords": [
+    "typora"
+  ],
+  "author": "ShotgunRO",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shotgun8767/typora-modern-theme/issues"
+  },
+  "homepage": "https://github.com/shotgun8767/typora-modern-theme#readme"
+}
