@@ -75,6 +75,11 @@
   color: var(--code-block-variable-color) !important;
 }
 
+/* unknown */
+.cm-s-inner .cm-variable-2 {
+  color: var(--code-block-basic-type-color) !important;
+}
+
 /* basic data type */
 .cm-s-inner .cm-variable-3 {
   color: var(--code-block-basic-type-color) !important;
@@ -105,6 +110,13 @@
   font-style: italic;
 }
 
+/* built-in function, type or class */
 .cm-s-inner .cm-builtin {
-  color: #0451a5;
+  color: var(--code-block-cm-builtin);
+  font-style: italic;
+}
+
+/* attributes in commands */
+.cm-s-inner .cm-attribute {
+  color: var(--code-block-cm-attribute);
 }

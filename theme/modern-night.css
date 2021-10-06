@@ -144,6 +144,8 @@
   --code-block-string-color: #C3E88D;
   --code-block-atom-color: #C792EA;
   --code-block-comment-color: #676E95;
+  --code-block-cm-builtin: #FFCB6B;
+  --code-block-cm-attribute: #676E95;
 }
 
 /* [list] */
