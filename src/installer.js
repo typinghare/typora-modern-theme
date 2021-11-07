@@ -23,7 +23,7 @@ function exec(command) {
 exec('git pull --ff-only');
 
 let theme_dir = path.join(__dirname, '..', 'theme')
-let dest_dir = path.join(__dirname, '..', '..')
+let dest_dir = process.argv[2] || path.join(__dirname, '..', '..')
 
 // copy theme files from '../theme' to '../..'
 fs.readdirSync(theme_dir).forEach(file => {
