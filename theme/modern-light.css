@@ -1,7 +1,7 @@
 /**
  Presented by ShotgunRO.
  github repository: https://github.com/shotgun8767/typora-modern-theme
- email: shotgun8767@gamil.com
+ email: shotgun.thinker@gamil.com
  -----------------------------------------------------------------------------------
  The modern family themes stylesheet can be divided into the following modules:
  1. [typora]: some extra styles for typora interface.
@@ -14,7 +14,7 @@
  8. [image]
  -----------------------------------------------------------------------------------
  You are allowed to modify the values of attributes in ':root' to customize your own
- theme, but remember to import the stylesheet, otherwise the attributes will not
+ theme, but remember to import the stylesheets, otherwise the attributes will not
  take effect.
  Be careful if you're gonna modify the stylesheets in 'modern' directory.
  */
@@ -27,3 +27,151 @@
 @import "modern/list.css";
 @import "modern/table.css";
 @import "modern/image.css";
+
+/* [typora] */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --side-bar-bg-color: #E2E2E2;
+    --select-text-bg-color: #4A89DC;
+    --search-select-bg-color: #CCCCCC;
+    --search-select-text-color: var(--text-color);
+    --heading-char-color: var(--text-color);
+    --color-popover-bg-color: #555555;
+    --window-border: 1px solid #777777;
+    --active-toggle-btn-color: #70717D;
+    --active-file-bg-color: #444444;
+    --active-file-text-color: inherit;
+    --active-file-border-color: #8d8df0;
+    --item-hover-bg-color: #70717D;
+    --item-hover-text-color: var(--text-color);
+    --side-bar-menu-active-tint: var(--side-bar-menu-active-tint);
+    --mac-title-bar-height: 20px;
+    --sidebar-width: 270px;
+    --tab-title-font-size: 16px;
+    --dropdown-menu-border-radius: 0.3em;
+    --dropdown-menu-background-color: #444444;
+    --dropdown-menu-divider-color: #777777;
+    --rawblock-edit-panel-bd: #333;
+    --base-font: "Helvetica Neue", "Noto Sans", -apple-system, Ubuntu,
+    "Microsoft YaHei", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans",
+    "Noto Sans CJK SC", "PingFang SC", "Hiragino Sans GB", "Source Han Sans SC",
+    "Source Han Sans CN", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti",
+    SimHei, "WenQuanYi Zen Hei Sharp", "Source Sans Pro", sans-serif;
+    --title-font: "EB Garamond", Georgia, "Noto Serif", "Noto Serif CJK SC",
+    "Nimbus Roman No9 L", "Songti SC", "Source Han Serif SC",
+    "Source Han Serif CN", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun,
+    SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN",
+    "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU,
+    "Ubuntu", "Source Sans Pro", serif;
+    --monospace: Consolas, "JetBrains Mono", "Fira Code", "Cascadia Code", "Microsoft YaHei UI",
+    "Sarasa Term SC", Monaco, "Deja Vu Sans Mono", "Lucida Console", "Andale Mono",
+    "Roboto Mono", Courier, Monospace !important;
+}
+
+/* [general] */
+:root {
+    --background-color: var(--bg-color);
+    --font-size: 16px;
+    --text-line-heigt: 1.6em;
+    --text-letter-spacing: 0;
+    --text-word-spacing: 0.05em;
+    --text-highligt-text-color: #D6628F;
+    --text-highlight-background-color: #D9DFD9;
+    --text-highlight-border-radius: 0.2em;
+    --text-highlight-padding: 0.15em 0.3em;
+    --text-highlight-margin: 0 0.15rem;
+    --link-color: #44A845;
+    --link-hover-color: var(--link-color);
+    --link-underscore-color: var(--link-color);
+    --link-url-color: var(--link-color);
+    --hr-color: #88CDF6;
+}
+
+/* [title] */
+:root {
+    --title-color: #2d82b5;
+    --title-h1-size: 2.4rem;
+    --title-h1-underscore-display: block; /* set 'none' as value if do not want underscore to be showed */
+    --title-h2-size: 1.8rem;
+    --title-h3-size: 1.6rem;
+    --title-h4-size: 1.45rem;
+    --title-h5-size: 1.3rem;
+    --title-h6-size: 1.15rem;
+}
+
+/* [blockquote] */
+:root {
+    --blockquote-background-color: #EDEDED;
+    --blockquote-bar-width: 0.25em;
+    --blockquote-bar-color: #F8D134;
+    --blockquote-bar-padding: 0.4em 0 0.4em 1em;
+    --blockquote-text-color: #6C6C6C;
+}
+
+/* [code] */
+:root {
+    --inline-code-font-size: 0.9em;
+    --inline-code-color: #F19D3A;
+    --inline-code-background-color: #71C4E8;
+    --inline-code-border: none;
+    --inline-code-border-radius: 0;
+    --inline-code-padding: 2px;
+    --inline-code-lateral-margin: 3px;
+
+    --code-block-border-color: #393939;
+    --code-block-border-radius: 6px;
+    --code-block-shadow: 3px 3px 12px #221B10;
+    --code-block-background-color: #292D3E;
+    --code-block-inner-padding: 4px;
+    --code-block-inner-border-radius: 8px;
+    --code-block-font-size: 16px;
+    --code-block-font-weight: lighter;
+    --code-block-line-height: 1.75;
+    --code-block-cursor-width: 3px;
+    --code-block-cursor-color: #FFD700;
+    --code-block-linenumber-padding: 0 1px 0 4px;
+    --code-block-linenumber-color: #4C5374;
+    --code-block-gutter-color: #4C5374;
+    --code-block-text-color: #89DDFF; /* many brackets are regard as text */
+    --code-block-keyword-color: #C792EA;
+    --code-block-operator-color: #89DDFF;
+    --code-block-matchingbracket-color: #89DDFF;
+    --code-block-def-color: #ffCB6B;
+    --code-block-variable-color: #82AAFF;
+    --code-block-basic-type-color: #ffCB6B;
+    --code-block-property-color: #EEFFFF;
+    --code-block-number-color: #F78C6C;
+    --code-block-string-color: #C3E88D;
+    --code-block-atom-color: #C792EA;
+    --code-block-comment-color: #676E95;
+    --code-block-cm-builtin: #FFCB6B;
+    --code-block-cm-attribute: #676E95;
+}
+
+/* [list] */
+:root {
+    --list-padding-left: 1.25em;
+    --list-item-padding-left: 0.25em;
+    --task-list-input-border-color: #B3B3B3;
+    --task-list-input-border-radius: 0.25em;
+    --task-list-input-hover-color: #666666;
+    --task-list-text-done-color: #B9B9B9;
+    --task-list-text-padding-left: 0.4em;
+    --task-list-input-tick-color: #B3B6B9;
+}
+
+/* [table] */
+:root {
+    --table-cell-padding: 0.5em; /* cell includes <th> and <td>, the same below */
+    --table-cell-border-color: var(--text-color);
+    --table-cell-second-fill-color: #E3E4E5;
+}
+
+/* [image] */
+:root {
+    --image-meta-text-color: #FF9D6F;
+    --image-meta-background-color: #333A75;
+    --image-padding: 1rem;
+    --image-background-color: #C0C0C0;
+}
