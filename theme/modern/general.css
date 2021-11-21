@@ -32,31 +32,12 @@ body > *:last-child {
   padding: 1em 4em 5em;
 }
 
-#write p {
-  line-height: var(--text-line-heigt);
-  word-spacing: var(--text-word-spacing);
-}
-
 a {
   text-decoration: none;
   border-bottom: none;
   color: var(--link-color);
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
-}
-
-mark {
-  color: var(--text-highligt-text-color);
-  background-color: var(--text-highlight-background-color);
-  border-radius: var(--text-highlight-border-radius);
-  padding: var(--text-highlight-padding);
-  margin: var(--text-highlight-margin);
-}
-
-hr {
-  background-color: var(--hr-color);
-  border: none;
-  height: 1px;
 }
 
 #write a {
@@ -74,4 +55,18 @@ hr {
 #write .md-url {
   color: var(--link-url-color);
   font-family: var(--monospace);
+}
+
+mark {
+  color: var(--text-highligt-text-color);
+  background-color: var(--text-highlight-background-color);
+  border-radius: var(--text-highlight-border-radius);
+  padding: var(--text-highlight-padding);
+  margin: var(--text-highlight-margin);
+}
+
+hr {
+  background-color: var(--hr-color);
+  border: none;
+  height: var(--hr-height);
 }

@@ -1,6 +1,6 @@
 blockquote {
   background-color: var(--blockquote-background-color);
-  border-left: var(--blockquote-bar-width) solid var(--blockquote-bar-color);
-  padding: var(--blockquote-bar-padding);
+  border-left: var(--blockquote-border-width) solid var(--blockquote-border-color);
+  padding: var(--blockquote-padding);
   color: var(--blockquote-text-color);
 }

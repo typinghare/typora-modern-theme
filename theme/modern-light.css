@@ -8,10 +8,10 @@
  2. [general]: includes bold, italic, highlight, link, horizontal rule(hr) and so on.
  3. [title]
  4. [blockquote]
- 5. [code]: includes inline code and code block.
- 6. [list]: includes unordered list, ordered list and task list.
- 7. [table]
- 8. [image]
+ 5. [list]: includes unordered list, ordered list and task list.
+ 6. [table]
+ 7. [image]
+ 8. [code]: includes inline code and code block.
  -----------------------------------------------------------------------------------
  You are allowed to modify the values of attributes in ':root' to customize your own
  theme, but remember to import the stylesheets, otherwise the attributes will not
@@ -23,102 +23,102 @@
 @import "modern/general.css";
 @import "modern/title.css";
 @import "modern/blockquote.css";
-@import "modern/code.css";
 @import "modern/list.css";
 @import "modern/table.css";
 @import "modern/image.css";
+@import "modern/code.css";
 @import "modern/root.css";
 
 /* [typora] */
 :root {
-    --bg-color: #ffffff;
-    --text-color: #333333;
-    --side-bar-bg-color: #E2E2E2;
-    --select-text-bg-color: #99CCFF;
-    --search-select-bg-color: #CCCCCC;
-    --search-select-text-color: var(--text-color);
-    --heading-char-color: var(--text-color);
-    --color-popover-bg-color: #B3B3B3;
-    --window-border: 1px solid #999999;
-    --active-toggle-btn-color: #999999;
-    --active-file-bg-color: #B3B3B3;
-    --active-file-text-color: inherit;
-    --active-file-border-color: #8d8df0;
-    --item-hover-bg-color: #B3B3B3;
-    --item-hover-text-color: var(--text-color);
-    --dropdown-menu-background-color: #B3B3B3;
-    --dropdown-menu-divider-color: #999999;
-    --rawblock-edit-panel-bd: #FFFFFF;
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --side-bar-bg-color: #E2E2E2;
+  --select-text-bg-color: #99CCFF;
+  --search-select-bg-color: #CCCCCC;
+  --search-select-text-color: var(--text-color);
+  --heading-char-color: var(--text-color);
+  --color-popover-bg-color: #B3B3B3;
+  --window-border: 1px solid #999999;
+  --active-toggle-btn-color: #999999;
+  --active-file-bg-color: #B3B3B3;
+  --active-file-text-color: inherit;
+  --active-file-border-color: #8d8df0;
+  --item-hover-bg-color: #B3B3B3;
+  --item-hover-text-color: var(--text-color);
+  --dropdown-menu-background-color: #B3B3B3;
+  --dropdown-menu-divider-color: #999999;
+  --rawblock-edit-panel-bd: #FFFFFF;
 }
 
 /* [general] */
 :root {
-    --background-color: var(--bg-color);
-    --text-highligt-text-color: #D6628F;
-    --text-highlight-background-color: #E6E6E6;
-    --link-color: #44A845;
-    --link-hover-color: var(--link-color);
-    --link-underscore-color: var(--link-color);
-    --link-url-color: var(--link-color);
-    --hr-color: #88CDF6;
+  --background-color: var(--bg-color);
+  --text-highligt-text-color: #D6628F;
+  --text-highlight-background-color: #E6E6E6;
+  --link-color: #44A845;
+  --link-hover-color: var(--link-color);
+  --link-underscore-color: var(--link-color);
+  --link-url-color: var(--link-color);
+  --hr-color: #88CDF6;
 }
 
 /* [title] */
 :root {
-    --title-color: #2D82B5;
+  --title-color: #2D82B5;
 }
 
 /* [blockquote] */
 :root {
-    --blockquote-background-color: #ECECEC;
-    --blockquote-bar-color: #FFCC00;
-    --blockquote-text-color: #666666;
-}
-
-/* [code] */
-:root {
-    --inline-code-color: #FA9000;
-    --inline-code-background-color: #E1FFFF;
-    --code-block-border-color: #C3C3C3;
-    --code-block-shadow: 0px 2px 6px #999999;
-    --code-block-background-color: #FFFFFF;
-    --code-block-cursor-color: #0181C2;
-    --code-block-linenumber-color: #999999;
-    --code-block-gutter-color: #999999;
-    --code-block-text-color: #383A42; /* many brackets are identified as text */
-    --code-block-keyword-color: #A626A4;
-    --code-block-operator-color: #4078F2;
-    --code-block-matchingbracket-color: #383A42;
-    --code-block-def-color: #C18401;
-    --code-block-variable-color: #383A42;
-    --code-block-basic-type-color: #000080;
-    --code-block-property-color: #E4564A;
-    --code-block-number-color: #986801;
-    --code-block-string-color: #50A14E;
-    --code-block-atom-color: #A626A4;
-    --code-block-comment-color: #A0A1A7;
-    --code-block-cm-builtin: #4078F2;
-    --code-block-cm-attribute: #A0A1A7;
+  --blockquote-background-color: #ECECEC;
+  --blockquote-border-color: #FFCC00;
+  --blockquote-text-color: #666666;
 }
 
 /* [list] */
 :root {
-    --task-list-input-border-color: #666666;
-    --task-list-input-hover-color: #CECECE;
-    --task-list-text-done-color: #B9B9B9;
-    --task-list-input-tick-color: #666666;
+  --task-list-input-border-color: #666666;
+  --task-list-input-hover-color: #CECECE;
+  --task-list-text-done-color: #B9B9B9;
+  --task-list-input-tick-color: #339933;
 }
 
 /* [table] */
 :root {
-    --table-cell-padding: 0.5em; /* cell includes <th> and <td>, the same below */
-    --table-cell-border-color: var(--text-color);
-    --table-cell-second-fill-color: #E3E4E5;
+  --table-cell-padding: 0.5em; /* cell includes <th> and <td>, the same below */
+  --table-cell-border-color: var(--text-color);
+  --table-cell-second-fill-color: #E3E4E5;
 }
 
 /* [image] */
 :root {
-    --image-meta-text-color: #FF9900;
-    --image-meta-background-color: #FFFFFF;
-    --image-background-color: #99CCFF;
+  --image-meta-text-color: #FF9900;
+  --image-meta-background-color: #FFFFFF;
+  --image-background-color: #99CCFF;
+}
+
+/* [code] */
+:root {
+  --inline-code-color: #FA9000;
+  --inline-code-background-color: #94DAFF;
+  --code-block-border-color: #C3C3C3;
+  --code-block-shadow: 0px 2px 6px #999999;
+  --code-block-background-color: #FFFFFF;
+  --code-block-cursor-color: #0181C2;
+  --code-block-linenumber-color: #999999;
+  --code-block-gutter-color: #999999;
+  --code-block-text-color: #383A42; /* many brackets are identified as text */
+  --code-block-keyword-color: #A626A4;
+  --code-block-operator-color: #4078F2;
+  --code-block-matchingbracket-color: #383A42;
+  --code-block-def-color: #C18401;
+  --code-block-variable-color: #383A42;
+  --code-block-basic-type-color: #000080;
+  --code-block-property-color: #E4564A;
+  --code-block-number-color: #986801;
+  --code-block-string-color: #50A14E;
+  --code-block-atom-color: #A626A4;
+  --code-block-comment-color: #A0A1A7;
+  --code-block-cm-builtin: #4078F2;
+  --code-block-cm-attribute: #A0A1A7;
 }

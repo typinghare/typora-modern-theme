@@ -1,9 +1,9 @@
 h1, h2, h3, h4, h5, h6 {
   position: relative;
-  margin-top: 2rem;
+  margin-top: 1.8rem;
   margin-bottom: 1rem;
   font-weight: normal;
-  line-height: 1.3;
+  line-height: 1.2;
   cursor: text;
   color: var(--title-color);
   font-family: var(--title-font);

@@ -79,35 +79,30 @@ git pull --force
 ~~~
 
 ~~~python
-def solve(arr: list, l: int, r: int) -> int:
-    # Conquer
-    if l == r:
-        return arr[l]
+class AdjacencyListGraph:
+    def __init__(self, vertex_number: int):
+        # vertex list
+        self.vl: list = [LinkedList() for i in range(vertex_number)]
 
-    # Divide
-    mid = (l + r) >> 1  # middle index
-    left_solution = solve(arr, 0, mid)
-    right_solution = solve(arr, mid + 1, r)
+    def add_edge(self, tail, head):
+        edge_list = self.vl[tail]
+        if not edge_list.contains(head):
+            self.vl[tail].insertLast(head)
 
-    # Combine
-    # a probability that the sub-array go across division
-    # [left]
-    left_sum = left_max_sum = arr[mid]
-    for i in range(mid - 1, l, -1):
-        left_sum += arr[i]
-        if left_sum > left_max_sum:
-            left_max_sum = left_sum
-    # [right]
-    right_sum = right_max_sum = arr[mid + 1]
-    for i in range(mid + 2, r):
-        right_sum += arr[i]
-        if right_sum > right_max_sum:
-            right_max_sum = right_sum
+    def remove_edge(self, tail, head):
+        edge_list = self.vl[tail]
+        curr = edge_list.first
 
-    return max(left_solution, right_solution, left_max_sum + right_max_sum)
+        i, pos = 0, -1
+        while curr is not None:
+            if curr.data == head:
+                pos = i
+                break
+            i += 1
+            curr = curr.next
+        if pos >= 0:
+            edge_list.remove(pos)
 ~~~
-
-
 
 ---
 

@@ -8,10 +8,10 @@
  2. [general]: includes bold, italic, highlight, link, horizontal rule(hr) and so on.
  3. [title]
  4. [blockquote]
- 5. [code]: includes inline code and code block.
- 6. [list]: includes unordered list, ordered list and task list.
- 7. [table]
- 8. [image]
+ 5. [list]: includes unordered list, ordered list and task list.
+ 6. [table]
+ 7. [image]
+ 8. [code]: includes inline code and code block.
  -----------------------------------------------------------------------------------
  You are allowed to modify the values of attributes in ':root' to customize your own
  theme, but remember to import the stylesheets, otherwise the attributes will not
@@ -31,94 +31,94 @@
 
 /* [typora] */
 :root {
-    --bg-color: #333333;
-    --text-color: #ECF0F1;
-    --side-bar-bg-color: #2C2C2C;
-    --select-text-bg-color: #4A89DC;
-    --search-select-bg-color: #222222;
-    --search-select-text-color: var(--text-color);
-    --heading-char-color: var(--text-color);
-    --color-popover-bg-color: #555555;
-    --window-border: 1px solid #777777;
-    --active-toggle-btn-color: #70717D;
-    --active-file-bg-color: #444444;
-    --active-file-text-color: inherit;
-    --active-file-border-color: #8d8df0;
-    --item-hover-bg-color: #70717D;
-    --item-hover-text-color: var(--text-color);
-    --dropdown-menu-background-color: #444444;
-    --dropdown-menu-divider-color: #777777;
-    --rawblock-edit-panel-bd: #333;
+  --bg-color: #333333;
+  --text-color: #ECF0F1;
+  --side-bar-bg-color: #2C2C2C;
+  --select-text-bg-color: #4A89DC;
+  --search-select-bg-color: #222222;
+  --search-select-text-color: var(--text-color);
+  --heading-char-color: var(--text-color);
+  --color-popover-bg-color: #555555;
+  --window-border: 1px solid #777777;
+  --active-toggle-btn-color: #70717D;
+  --active-file-bg-color: #444444;
+  --active-file-text-color: inherit;
+  --active-file-border-color: #8d8df0;
+  --item-hover-bg-color: #70717D;
+  --item-hover-text-color: var(--text-color);
+  --dropdown-menu-background-color: #444444;
+  --dropdown-menu-divider-color: #777777;
+  --rawblock-edit-panel-bd: #333;
 }
 
 /* [general] */
 :root {
-    --background-color: var(--bg-color);
-    --text-highligt-text-color: #F777D1;
-    --text-highlight-background-color: #494f49;
-    --link-color: #52CAA7;
-    --link-hover-color: var(--link-color);
-    --link-underscore-color: var(--link-color);
-    --link-url-color: #72BAA7;
-    --hr-color: #7BBFEA;
+  --background-color: var(--bg-color);
+  --text-highligt-text-color: #F777D1;
+  --text-highlight-background-color: #494f49;
+  --link-color: #52CAA7;
+  --link-hover-color: var(--link-color);
+  --link-underscore-color: var(--link-color);
+  --link-url-color: #72BAA7;
+  --hr-color: #7BBFEA;
 }
 
 /* [title] */
 :root {
-    --title-color: #99CCFF;
+  --title-color: #99CCFF;
 }
 
 /* [blockquote] */
 :root {
-    --blockquote-background-color: #444444;
-    --blockquote-bar-color: #FFDD80;
-    --blockquote-text-color: #BCBCBC;
-}
-
-/* [code] */
-:root {
-    --inline-code-color: #FF9D6F;
-    --inline-code-background-color: #333A75;
-    --code-block-border-color: #393939;
-    --code-block-shadow: 3px 3px 12px #221B10;
-    --code-block-background-color: #292D3E;
-    --code-block-cursor-color: #FFD700;
-    --code-block-linenumber-color: #4C5374;
-    --code-block-gutter-color: #4C5374;
-    --code-block-text-color: #89DDFF; /* many brackets are identified as text */
-    --code-block-keyword-color: #C792EA;
-    --code-block-operator-color: #89DDFF;
-    --code-block-matchingbracket-color: #89DDFF;
-    --code-block-def-color: #ffCB6B;
-    --code-block-variable-color: #82AAFF;
-    --code-block-basic-type-color: #ffCB6B;
-    --code-block-property-color: #EEFFFF;
-    --code-block-number-color: #F78C6C;
-    --code-block-string-color: #C3E88D;
-    --code-block-atom-color: #C792EA;
-    --code-block-comment-color: #676E95;
-    --code-block-cm-builtin: #FFCB6B;
-    --code-block-cm-attribute: #676E95;
+  --blockquote-background-color: #444444;
+  --blockquote-border-color: #FFDD80;
+  --blockquote-text-color: #BCBCBC;
 }
 
 /* [list] */
 :root {
-    --task-list-input-border-color: #B3B3B3;
-    --task-list-input-hover-color: #666666;
-    --task-list-text-done-color: #B9B9B9;
-    --task-list-input-tick-color: #B3B6B9;
+  --task-list-input-border-color: #B3B3B3;
+  --task-list-input-hover-color: #666666;
+  --task-list-text-done-color: #B9B9B9;
+  --task-list-input-tick-color: #B3B6B9;
 }
 
 /* [table] */
 :root {
-    --table-cell-padding: 0.5em; /* cell includes <th> and <td>, the same below */
-    --table-cell-border-color: var(--text-color);
-    --table-cell-second-fill-color: #444444;
+  --table-cell-padding: 0.5em; /* cell includes <th> and <td>, the same below */
+  --table-cell-border-color: var(--text-color);
+  --table-cell-second-fill-color: #444444;
 }
 
 /* [image] */
 :root {
-    --image-meta-text-color: #FF9D6F;
-    --image-meta-background-color: #333A75;
-    --image-background-color: #C0C0C0;
+  --image-meta-text-color: #FF9D6F;
+  --image-meta-background-color: #333A75;
+  --image-background-color: #C0C0C0;
+}
+
+/* [code] */
+:root {
+  --inline-code-color: #FF9D6F;
+  --inline-code-background-color: #333A75;
+  --code-block-border-color: #393939;
+  --code-block-shadow: 3px 3px 12px #221B10;
+  --code-block-background-color: #292D3E;
+  --code-block-cursor-color: #FFD700;
+  --code-block-linenumber-color: #4C5374;
+  --code-block-gutter-color: #4C5374;
+  --code-block-text-color: #89DDFF; /* many brackets are identified as text */
+  --code-block-keyword-color: #C792EA;
+  --code-block-operator-color: #89DDFF;
+  --code-block-matchingbracket-color: #89DDFF;
+  --code-block-def-color: #ffCB6B;
+  --code-block-variable-color: #82AAFF;
+  --code-block-basic-type-color: #ffCB6B;
+  --code-block-property-color: #EEFFFF;
+  --code-block-number-color: #F78C6C;
+  --code-block-string-color: #C3E88D;
+  --code-block-atom-color: #C792EA;
+  --code-block-comment-color: #676E95;
+  --code-block-cm-builtin: #FFCB6B;
+  --code-block-cm-attribute: #676E95;
 }

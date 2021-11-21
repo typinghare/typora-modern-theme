@@ -1,84 +1,140 @@
 /* [typora] */
 :root {
-    --mac-title-bar-height: 20px;
-    --sidebar-width: 270px;
-    --tab-title-font-size: 16px;
-    --dropdown-menu-border-radius: 0.3em;
-    --base-font: "Helvetica Neue", "Noto Sans", -apple-system, Ubuntu,
-    "Microsoft YaHei", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans",
-    "Noto Sans CJK SC", "PingFang SC", "Hiragino Sans GB", "Source Han Sans SC",
-    "Source Han Sans CN", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti",
-    SimHei, "WenQuanYi Zen Hei Sharp", "Source Sans Pro", sans-serif;
-    --title-font: "EB Garamond", Georgia, "Noto Serif", "Noto Serif CJK SC",
-    "Nimbus Roman No9 L", "Songti SC", "Source Han Serif SC",
-    "Source Han Serif CN", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun,
-    SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN",
-    "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU,
-    "Ubuntu", "Source Sans Pro", serif;
-    --monospace: "Menlo", Consolas, "Monaco", "JetBrains Mono", "Fira Code", "Cascadia Code",
-    "Microsoft YaHei UI", "Sarasa Term SC", Monaco, "Deja Vu Sans Mono", "Lucida Console",
-    "Andale Mono", "Roboto Mono", Courier, Monospace !important;
+  /* MacOS 下标题栏的高度*/
+  --mac-title-bar-height: 20px;
+  /* 侧边栏宽度 */
+  --sidebar-width: 270px;
+  /* 侧边栏中标题字体大小 */
+  --tab-title-font-size: 16px;
+  /* 下拉菜单的圆角半径 */
+  --dropdown-menu-border-radius: 0.3em;
+  /* 基本字体 */
+  --base-font: "Helvetica Neue", "Noto Sans", -apple-system, Ubuntu,
+  "Microsoft YaHei", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans",
+  "Noto Sans CJK SC", "PingFang SC", "Hiragino Sans GB", "Source Han Sans SC",
+  "Source Han Sans CN", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti",
+  SimHei, "WenQuanYi Zen Hei Sharp", "Source Sans Pro", sans-serif;
+  /* 标题字体 */
+  --title-font: "EB Garamond", Georgia, "Noto Serif", "Noto Serif CJK SC",
+  "Nimbus Roman No9 L", "Songti SC", "Source Han Serif SC",
+  "Source Han Serif CN", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun,
+  SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN",
+  "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU,
+  "Ubuntu", "Source Sans Pro", serif;
+  /* 代码字体 */
+  --monospace: "Menlo", Consolas, "Monaco", "JetBrains Mono", "Fira Code", "Cascadia Code",
+  "Microsoft YaHei UI", "Sarasa Term SC", Monaco, "Deja Vu Sans Mono", "Lucida Console",
+  "Andale Mono", "Roboto Mono", Courier, Monospace !important;
 }
 
 /* [general] */
 :root {
-    --font-size: 16px;
-    --text-line-heigt: 1.6em;
-    --text-letter-spacing: 0;
-    --text-word-spacing: 0.05em;
-    --text-highlight-border-radius: 0.2em;
-    --text-highlight-padding: 0.15em 0.3em;
-    --text-highlight-margin: 0 0.15rem;
+  /* 全局字体大小 */
+  --font-size: 16px;
+  /* 文本的行高 */
+  --text-line-heigt: 1.6em;
+  /* 文本的字符间距 */
+  --text-letter-spacing: 0;
+  /* 文本的单词间距（英文单词） */
+  --text-word-spacing: 0.05em;
+  /* 高亮文本的圆角半径 */
+  --text-highlight-border-radius: 0.2em;
+  /* 高亮文本的 padding */
+  --text-highlight-padding: 0.15em 0.3em;
+  /* 高亮文本的 margin */
+  --text-highlight-margin: 0 0.15rem;
+  /* 分割线的厚度 */
+  --hr-height: 1px;
 }
 
 /* [title] */
 :root {
-    --title-h1-size: 2.4rem;
-    --title-h1-underscore-display: block; /* set 'none' as value if do not want underscore to be showed */
-    --title-h2-size: 1.8rem;
-    --title-h3-size: 1.6rem;
-    --title-h4-size: 1.45rem;
-    --title-h5-size: 1.3rem;
-    --title-h6-size: 1.15rem;
+  /* 1 号标题字体大小 */
+  --title-h1-size: 2.4rem;
+  /* 1号标题是否设置下划线 */
+  --title-h1-underscore-display: block; /* set 'none' as value if do not want underscore to be showed */
+  /* 2号标题字体大小 */
+  --title-h2-size: 1.8rem;
+  /* 3号标题字体大小 */
+  --title-h3-size: 1.6rem;
+  /* 4号标题字体大小 */
+  --title-h4-size: 1.45rem;
+  /* 5号标题字体大小 */
+  --title-h5-size: 1.3rem;
+  /* 6号标题字体大小 */
+  --title-h6-size: 1.15rem;
 }
 
 /* [blockquote] */
 :root {
-    --blockquote-bar-width: 0.25em;
-    --blockquote-bar-padding: 0.4em 0 0.4em 1em;
-}
-
-/* [code] */
-:root {
-    --inline-code-font-size: 0.9em;
-    --inline-code-border: none;
-    --inline-code-border-radius: 0;
-    --inline-code-padding: 2px;
-    --inline-code-lateral-margin: 3px;
-    --code-block-border-radius: 6px;
-    --code-block-inner-padding: 4px;
-    --code-block-inner-border-radius: 8px;
-    --code-block-font-size: 14px;
-    --code-block-font-weight: lighter;
-    --code-block-line-height: 1.75;
-    --code-block-cursor-width: 2px;
-    --code-block-linenumber-padding: 0 1px 0 4px;
+  /* 块级引用左侧的 border 的宽度 */
+  --blockquote-border-width: 0.25em;
+  /* 块级引用的 padding */
+  --blockquote-padding: 0.4em 0 0.4em 1em;
 }
 
 /* [list] */
 :root {
-    --list-padding-left: 1.25em;
-    --list-item-padding-left: 0.25em;
-    --task-list-input-border-radius: 0.25em;
-    --task-list-text-padding-left: 0.4em;
+  /* 无序列表 padding */
+  --list-ul-padding: 0 0 0 1.8em;
+  /* 有序列表 padding */
+  --list-ol-padding: 0 0 0 2em;
+  /* 列表项（无序列表） padding */
+  --list-ul-item-padding: 0;
+  /* 列表项（有序列表） padding */
+  --list-ol-item-padding: 0;
+  /* 任务列表输入框圆角半径 */
+  --task-list-input-border-radius: 0.25em;
+  /* 任务列表文本左侧 padding */
+  --task-list-text-padding-left: 0.25em;
+  /* 任务列表文本的透明度（当任务被选中后） */
+  --task-list-text-opacity: 0.6;
 }
 
 /* [table] */
 :root {
-    --table-cell-padding: 0.5em; /* cell includes <th> and <td>, the same below */
+  /* 表格的 margin */
+  --table-margin: 0 0 1.25rem 0;
+  /* 表格的单格 padding */
+  --table-cell-padding: 0.5em; /* cell includes <th> and <td>, the same below */
+  /* 表格的单格文本行高 */
+  --table-cell-line-height: 1.25rem
 }
 
 /* [image] */
 :root {
-    --image-padding: 0.8rem;
+  /* 图像 padding（即外框的厚度） */
+  --image-padding: 0.8rem;
+  /* 图像外框圆角 */
+  --image-border-radius: 0.3rem;
+}
+
+/* [code] */
+:root {
+  /* 内联代码的字体大小 */
+  --inline-code-font-size: 0.875em;
+  /* 内联代码的边框（ none 表示无边框） */
+  --inline-code-border: none;
+  /* 内联代码边框的圆角半径 */
+  --inline-code-border-radius: 0;
+  /* 内联代码 padding */
+  --inline-code-padding: 2px;
+  /* 内联代码 margin */
+  --inline-code-margin: 0 3px;
+  /* 代码块的圆角半径 */
+  --code-block-border-radius: 6px;
+  /* 代码块容器 padding */
+  --code-block-inner-padding: 4px;
+  /* 代码块容器的圆角半径 */
+  --code-block-inner-border-radius: 8px;
+  /* 代码块字体大小 */
+  --code-block-font-size: 0.875rem;
+  /* 代码块字体粗细 */
+  --code-block-font-weight: lighter;
+  /* 代码块字体行高 */
+  --code-block-line-height: 1.6;
+  /* 代码块游标宽度 */
+  --code-block-cursor-width: 2px;
+  /* 代码块的左侧行数块的 padding */
+  --code-block-linenumber-padding: 0 1px 0 4px;
 }

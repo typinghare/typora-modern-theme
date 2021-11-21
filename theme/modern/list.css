@@ -1,5 +1,17 @@
-ul, ol {
-  padding-left: var(--list-padding-left);
+#write ul {
+  padding: var(--list-ul-padding) !important;
+}
+
+#write ol {
+  padding: var(--list-ol-padding) !important;
+}
+
+#write ul > li {
+  padding: var(--list-ul-item-padding);
+}
+
+#write ol > li {
+  padding: var(--list-ol-item-padding);
 }
 
 ul:first-child, ol:first-child {
@@ -10,14 +22,9 @@ ul:last-child, ol:last-child {
   margin-bottom: 0;
 }
 
-#write ol li, ul li {
-  padding-left: var(--list-item-padding-left);
-}
-
-
 /* ------------ task list ------------ */
 .md-task-list-item {
-  margin-top: 0.3rem;
+  margin-top: 0.2rem;
 }
 
 #write .md-task-list-item > input {
@@ -73,9 +80,9 @@ ul:last-child, ol:last-child {
 }
 
 #write .md-task-list-item.task-list-done > p > .md-emoji {
-  opacity: 0.6;
+  opacity: var(--task-list-text-opacity);
 }
 
 #write .md-task-list-item.task-list-done > p > .md-link > a {
-  opacity: 0.6;
+  opacity: var(--task-list-text-opacity);
 }

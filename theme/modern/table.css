@@ -1,5 +1,5 @@
 table {
-  margin-bottom: 1.25rem;
+  margin: var(--table-margin);
 }
 
 table th {
@@ -8,9 +8,9 @@ table th {
 
 table th, table td {
   padding: var(--table-cell-padding);
-  line-height: 1.25rem;
-  vertical-align: middle;
+  line-height: var(--table-cell-line-height);
   border: 1px solid var(--table-cell-border-color);
+  vertical-align: middle;
 }
 
 table tr:nth-child(2n), thead {
