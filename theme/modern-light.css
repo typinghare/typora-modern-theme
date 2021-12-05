@@ -32,7 +32,7 @@
 /* [typora] */
 :root {
   --bg-color: #ffffff;
-  --text-color: #333333;
+  --text-color: #202122;
   --side-bar-bg-color: #E2E2E2;
   --select-text-bg-color: #99CCFF;
   --search-select-bg-color: #CCCCCC;
@@ -99,8 +99,8 @@
 
 /* [code] */
 :root {
-  --inline-code-color: #FA9000;
-  --inline-code-background-color: #94DAFF;
+  --inline-code-color: #E87000;
+  --inline-code-background-color: #F0F8FF;
   --code-block-border-color: #C3C3C3;
   --code-block-shadow: 0px 2px 6px #999999;
   --code-block-background-color: #FFFFFF;
