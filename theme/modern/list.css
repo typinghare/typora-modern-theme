@@ -2,6 +2,10 @@
   padding: var(--list-ul-padding) !important;
 }
 
+#write ul ::marker {
+  color: var(--list-ul-item-marker-color);
+}
+
 #write ol {
   padding: var(--list-ol-padding) !important;
 }

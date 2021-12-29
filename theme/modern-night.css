@@ -70,13 +70,14 @@
 
 /* [blockquote] */
 :root {
-  --blockquote-background-color: #444444;
+  --blockquote-background-color: #2B4162;
   --blockquote-border-color: #FFDD80;
-  --blockquote-text-color: #BCBCBC;
+  --blockquote-text-color: var(--text-color);
 }
 
 /* [list] */
 :root {
+  --list-ul-item-marker-color: #39BAE8;
   --task-list-input-border-color: #B3B3B3;
   --task-list-input-hover-color: #666666;
   --task-list-text-done-color: #B9B9B9;

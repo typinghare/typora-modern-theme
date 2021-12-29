@@ -67,10 +67,16 @@
 
 /* [blockquote] */
 :root {
+  /*!* 块级引用左侧的 border 的宽度 *!*/
+  /*--blockquote-border-width: 0.25em;*/
+  /*!* 块级引用的 padding *!*/
+  /*--blockquote-padding: 0.4em 0 0.4em 1em;*/
   /* 块级引用左侧的 border 的宽度 */
-  --blockquote-border-width: 0.25em;
+  --blockquote-border-width: 0;
   /* 块级引用的 padding */
-  --blockquote-padding: 0.4em 0 0.4em 1em;
+  --blockquote-padding: 0.8em;
+  /* 圆角 */
+  --blockquote-border-radius: 10px;
 }
 
 /* [list] */
